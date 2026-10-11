@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>VS Code</title>
+</head>
+<body class="m-0 p-0 box-border">
+  <main id="main" class="w-screen h-screen bg-[#1F1F1F]">
+    <header class="w-full h-auto bg-[#181818] flex items-center justify-between">
+      <div  class=" h-fit w-[20%] text-sm text-white bg-[#181818] flex items-center justify-between py-1 px-2">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" alt="VS Code Logo" class="w-6 h-6">
+        <h2 class="hover:bg-[#2D2D2D] cursor-pointer rounded-md px-2 ">File</h2>
+        <h2 class="hover:bg-[#2D2D2D] cursor-pointer rounded-md px-2 ">Edit</h2>
+        <h2 class="hover:bg-[#2D2D2D] cursor-pointer rounded-md px-2 ">Selection</h2>
+        <h2 class="hover:bg-[#2D2D2D] cursor-pointer rounded-md px-2">View</h2>
+        <h2 class="hover:bg-[#2D2D2D] cursor-pointer rounded-md px-2 ">Go</h2>
+        <h2 class="hover:bg-[#2D2D2D] cursor-pointer rounded-md px-2 ">Run</h2>
+        <h2 class="hover:bg-[#2D2D2D] cursor-pointer rounded-md px-2">•••</h2>
+      </div>
+      <div class=" h-fit w-[50%] gap-2 text-sm text-white bg-[#1F1F1F] border rounded-md border-[#343434] flex items-center justify-between my-1 px-2">
+        <input type="text" placeholder=" Search" class="w-full bg-[#1F1F1F] text-white rounded focus:outline-none focus:ring-0">
+        <div class="flex items-center gap-2">
+          <h2>|</h2>
+          <h2 class="hover:bg-[#2D2D2D] cursor-pointer rounded-md px-1">@ </h2>
+          <h2 >|</h2>
+          <h2 class="hover:bg-[#2D2D2D] cursor-pointer rounded-md px-1">[] </h2>
+          <h2 class="hover:bg-[#2D2D2D] cursor-pointer rounded-md px-1">^</h2>
+        </div>
+      </div>
+      <div class="text-sm text-white bg-[#181818] flex items-center justify-between">
+        <h2 class="hover:bg-[#2D2D2D] cursor-pointer rounded-md px-2">[]</h2>
+        <h2 class="hover:bg-[#2D2D2D] cursor-pointer rounded-md px-2">[]</h2>
+        <h2 class="hover:bg-[#2D2D2D] cursor-pointer rounded-md px-2">[]</h2>
+        <div class="h-full hover:bg-[#2D2D2D] cursor-pointer  px-2">
+          <h2>-</h2>
+        </div>
+        <div class=" h-full hover:bg-[#2D2D2D] cursor-pointer px-2">
+          <h2>[]</h2>
+        </div>
+        <div class=" h-full w-full hover:bg-red-500 cursor-pointer px-2">
+          <h2>X </h2>
+        </div>
+      </div>
+    </header>
+    <div class="w-full bg-black text-white flex items-center justify-center h-10">
+      <h1>VS Code</h1>
+    </div>
+    <div class="w-full h-90p flex">
+      <div class="w-1/5 h-full bg-red">
+        <h2>Sidebar</h2>
+      </div>
+      <div class="w-4/5 h-full bg-[#1F1F1F]">
+        <h2>Editor</h2>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
