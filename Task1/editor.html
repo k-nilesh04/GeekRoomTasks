@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>VS Code</title>
+</head>
+<body class="m-0 p-0 box-border">
+  <main id="main" class="w-screen h-screen bg-[#1F1F1F]">
+    <header class="w-full h-[5%] bg-[#181818] flex items-center justify-between">
+      <div  class=" h-fit w-[20%] text-sm text-white bg-[#181818] flex items-center justify-between py-1 px-1">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" alt="VS Code Logo" class="w-6 h-6 px-1">
+        <h2 class="hover:bg-[#2D2D2D] cursor-pointer rounded-md px-2 ">File</h2>
+        <h2 class="hover:bg-[#2D2D2D] cursor-pointer rounded-md px-2 ">Edit</h2>
+        <h2 class="hover:bg-[#2D2D2D] cursor-pointer rounded-md px-2 ">Selection</h2>
+        <h2 class="hover:bg-[#2D2D2D] cursor-pointer rounded-md px-2">View</h2>
+        <h2 class="hover:bg-[#2D2D2D] cursor-pointer rounded-md px-2 ">Go</h2>
+        <h2 class="hover:bg-[#2D2D2D] cursor-pointer rounded-md px-2 ">Run</h2>
+        <h2 class="hover:bg-[#2D2D2D] cursor-pointer rounded-md px-2">•••</h2>
+      </div>
+      <div class=" h-fit w-[50%] gap-2 text-sm text-white bg-[#1F1F1F] border rounded-md border-[#343434] flex items-center justify-between my-1 px-2">
+        <input type="text" placeholder="Search" class="w-full bg-[#1F1F1F] text-white rounded focus:outline-none focus:ring-0">
+        <div class="flex justify-center items-center gap-1">
+          <h2 class="text-[#343434]">|</h2>
+          <h2 class="hover:bg-[#2D2D2D] cursor-pointer rounded-md px-1">@ </h2>
+          <h2 class="text-[#343434]">|</h2>
+          <h2 class="hover:bg-[#2D2D2D] cursor-pointer rounded-md px-1">[] </h2>
+          <h2 class="hover:bg-[#2D2D2D] cursor-pointer rounded-md px-1">^</h2>
+        </div>
+      </div>
+      <div class="text-sm text-white bg-[#181818] flex items-center justify-between">
+        <h2 class="hover:bg-[#2D2D2D] cursor-pointer rounded-md px-2">[]</h2>
+        <h2 class="hover:bg-[#2D2D2D] cursor-pointer rounded-md px-2">[]</h2>
+        <h2 class="hover:bg-[#2D2D2D] cursor-pointer rounded-md px-2">[]</h2>
+        <div class="h-full hover:bg-[#2D2D2D] cursor-pointer  px-2">
+          <h2>-</h2>
+        </div>
+        <div class=" h-full hover:bg-[#2D2D2D] cursor-pointer px-2">
+          <h2>[]</h2>
+        </div>
+        <div class=" h-full w-full hover:bg-red-500 cursor-pointer px-2">
+          <h2>X </h2>
+        </div>
+      </div>
+    </header>
+
+    <div class="w-full h-[95%] flex">
+      <aside class="w-[5%] h-full text-white px-1 bg-[#1F1F1F]">
+        <h2>Sidebar</h2>
+      </aside>
+      <section class="flex flex-col w-[95%] h-full">     
+        <div class=" flex justify-between items-center">
+          <div class="w-1/5 h-fit px-2 text-white border-2 border-b-0 rounded-t-md rounded-b-none border-[#484848] bg-[#343434] flex justify-between items-center">
+            <h2>Welcome</h2>
+            <h2 class="hover:bg-[#2D2D2D] cursor-pointer rounded-md px-1.5">x</h2>
+          </div>
+          <div class="w-4/5 h-fit px-2 text-white rounded-md bg-[#181818] flex flex-row justify-end ">
+            <h1 class="hover:bg-[#2D2D2D] cursor-pointer rounded-md px-1"> > </h1>
+            <h1 class="hover:bg-[#2D2D2D] cursor-pointer rounded-md px-1"> [] </h1>
+            <h1 class="hover:bg-[#2D2D2D] cursor-pointer rounded-md px-1"> •••</h1>
+          </div>
+        </div>
+        <div class="w-full h-full border-2 border-[#484848] bg-[#343434] flex flex-col justify-center items-center">
+            <h2>Editor</h2>
+        </div>
+      </section>
+    </div>
+
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
