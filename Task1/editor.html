@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
   <script src="https://cdn.tailwindcss.com"></script>
   <title>VS Code</title>
 </head>
@@ -17,51 +19,57 @@
         <h2 class="hover:bg-[#2D2D2D] cursor-pointer rounded-md px-2">View</h2>
         <h2 class="hover:bg-[#2D2D2D] cursor-pointer rounded-md px-2 ">Go</h2>
         <h2 class="hover:bg-[#2D2D2D] cursor-pointer rounded-md px-2 ">Run</h2>
-        <h2 class="hover:bg-[#2D2D2D] cursor-pointer rounded-md px-2">•••</h2>
+        <h2 class="hover:bg-[#2D2D2D] cursor-pointer rounded-md px-2" aria-label="More actions"><i class="fa-solid fa-ellipsis"></i></h2>
       </div>
       <div class=" h-fit w-[50%] gap-2 text-sm text-white bg-[#1F1F1F] border rounded-md border-[#343434] flex items-center justify-between my-1 px-2">
         <input type="text" placeholder="Search" class="w-full bg-[#1F1F1F] text-white rounded focus:outline-none focus:ring-0">
         <div class="flex justify-center items-center gap-1">
           <h2 class="text-[#343434]">|</h2>
-          <h2 class="hover:bg-[#2D2D2D] cursor-pointer rounded-md px-1">@ </h2>
+          <h2 class="hover:bg-[#2D2D2D] cursor-pointer rounded-md px-1" aria-label="Search history"><i class="fa-solid fa-clock-rotate-left"></i></h2>
           <h2 class="text-[#343434]">|</h2>
-          <h2 class="hover:bg-[#2D2D2D] cursor-pointer rounded-md px-1">[] </h2>
-          <h2 class="hover:bg-[#2D2D2D] cursor-pointer rounded-md px-1">^</h2>
+          <h2 class="hover:bg-[#2D2D2D] cursor-pointer rounded-md px-1" aria-label="Clear search"><i class="fa-solid fa-xmark"></i></h2>
+          <h2 class="hover:bg-[#2D2D2D] cursor-pointer rounded-md px-1" aria-label="Search options"><i class="fa-solid fa-chevron-down"></i></h2>
         </div>
       </div>
       <div class="text-sm text-white bg-[#181818] flex items-center justify-between">
-        <h2 class="hover:bg-[#2D2D2D] cursor-pointer rounded-md px-2">[]</h2>
-        <h2 class="hover:bg-[#2D2D2D] cursor-pointer rounded-md px-2">[]</h2>
-        <h2 class="hover:bg-[#2D2D2D] cursor-pointer rounded-md px-2">[]</h2>
+        <h2 class="hover:bg-[#2D2D2D] cursor-pointer rounded-md px-2" aria-label="Toggle primary side bar"><i class="fa-solid fa-table-columns"></i></h2>
+        <h2 class="hover:bg-[#2D2D2D] cursor-pointer rounded-md px-2" aria-label="Toggle panel"><i class="fa-solid fa-window-maximize"></i></h2>
+        <h2 class="hover:bg-[#2D2D2D] cursor-pointer rounded-md px-2" aria-label="Toggle secondary side bar"><i class="fa-solid fa-table-columns"></i></h2>
         <div class="h-full hover:bg-[#2D2D2D] cursor-pointer  px-2">
-          <h2>-</h2>
+          <h2><i class="fa-solid fa-minus"></i></h2>
         </div>
         <div class=" h-full hover:bg-[#2D2D2D] cursor-pointer px-2">
-          <h2>[]</h2>
+          <h2><i class="fa-regular fa-square"></i></h2>
         </div>
         <div class=" h-full w-full hover:bg-red-500 cursor-pointer px-2">
-          <h2>X </h2>
+          <h2><i class="fa-solid fa-xmark"></i></h2>
         </div>
       </div>
     </header>
 
     <div class="w-full h-[95%] flex">
-      <aside class="w-[5%] h-full text-white px-1 bg-[#1F1F1F]">
-        <h2>Sidebar</h2>
-      </aside>
+      <div class="w-[3.5%] h-full flex justify-center text-white bg-[#1F1F1F]">
+        <div class="flex w-[100%] rounded-t-lg shrink-0 flex-col items-center space-y-4 border-r border-black/20 bg-[#333333] py-2 text-gray-500 sm:w-12">
+            <i class="fa-regular fa-copy text-xl text-gray-300 border-l-2 border-brandBlue pl-1 w-full text-center"></i>
+            <i class="fa-solid fa-magnifying-glass text-xl hover:text-gray-300 cursor-pointer"></i>
+            <i class="fa-solid fa-code-branch text-xl hover:text-gray-300 cursor-pointer"></i>
+            <i class="fa-solid fa-bug text-xl hover:text-gray-300 cursor-pointer"></i>
+            <i class="fa-solid fa-puzzle-piece text-xl hover:text-gray-300 cursor-pointer"></i>
+        </div>
+      </div>
       <section class="flex flex-col w-[95%] h-full">     
         <div class=" flex justify-between items-center">
           <div class="w-1/5 h-fit px-2 text-white border-2 border-b-0 rounded-t-md rounded-b-none border-[#484848] bg-[#343434] flex justify-between items-center">
             <h2>Welcome</h2>
-            <h2 class="hover:bg-[#2D2D2D] cursor-pointer rounded-md px-1.5">x</h2>
+            <h2 class="hover:bg-[#2D2D2D] cursor-pointer rounded-md px-1.5" aria-label="Close tab"><i class="fa-solid fa-xmark"></i></h2>
           </div>
           <div class="w-4/5 h-fit px-2 text-white rounded-md bg-[#181818] flex flex-row justify-end ">
-            <h1 class="hover:bg-[#2D2D2D] cursor-pointer rounded-md px-1"> > </h1>
-            <h1 class="hover:bg-[#2D2D2D] cursor-pointer rounded-md px-1"> [] </h1>
-            <h1 class="hover:bg-[#2D2D2D] cursor-pointer rounded-md px-1"> •••</h1>
+            <h1 class="hover:bg-[#2D2D2D] cursor-pointer rounded-md px-1" aria-label="Navigate forward"><i class="fa-solid fa-chevron-right"></i></h1>
+            <h1 class="hover:bg-[#2D2D2D] cursor-pointer rounded-md px-1" aria-label="Split editor"><i class="fa-solid fa-table-columns"></i></h1>
+            <h1 class="hover:bg-[#2D2D2D] cursor-pointer rounded-md px-1" aria-label="More actions"><i class="fa-solid fa-ellipsis"></i></h1>
           </div>
         </div>
-        <div class="w-full h-full border-2 border-[#484848] bg-[#343434] flex flex-col justify-center items-center">
+        <div class="w-full h-full text-white border-2 border-[#484848] bg-[#343434] flex flex-col justify-center items-center">
             <h2>Editor</h2>
         </div>
       </section>
